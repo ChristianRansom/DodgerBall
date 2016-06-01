@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/layout"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/coin"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.37"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do Animation"
+        android:id="@+id/doAnimation"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/centerButton"
+        android:layout_toStartOf="@+id/centerButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center"
+        android:id="@+id/centerButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/coin"
+        android:layout_alignEnd="@+id/coin"/>
+
+</RelativeLayout>

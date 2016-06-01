@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/score"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/highScore"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/score"
+        android:layout_alignLeft="@+id/score"
+        android:layout_alignStart="@+id/score"
+        android:layout_marginTop="54dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/menu"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/newGame"
+        android:layout_toLeftOf="@+id/newGame"
+        android:layout_toStartOf="@+id/newGame"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset High Score"
+        android:id="@+id/resetHighScore"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/newGame"
+        android:layout_toRightOf="@+id/newGame"
+        android:layout_toEndOf="@+id/newGame"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/newGame"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="High Score"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/highScore"
+        android:layout_alignLeft="@+id/menu"
+        android:layout_alignStart="@+id/menu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Score"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"/>
+</RelativeLayout>

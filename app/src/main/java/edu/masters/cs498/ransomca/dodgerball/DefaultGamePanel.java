@@ -101,7 +101,7 @@ public class DefaultGamePanel extends GamePanel
     }
 
     //Commented out for debuggings
-    //updateBallCount();
+    updateBallCount();
 
   }
 
